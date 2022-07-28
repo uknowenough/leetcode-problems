@@ -36,8 +36,11 @@ endif ()
 
 include_directories(${GTestIncludes} ../include)
 
-add_executable(leetcode_test main.cpp tst_p_792.cpp
-               ${GTestFiles})
-add_test(NAME leetcode_test COMMAND p_792)
+add_executable(leetcode_test main.cpp
+    tst_p_792.cpp
+    tst_p_242.cpp
+    tst_p_3.cpp
+    ${GTestFiles})
+add_test(NAME leetcode_test COMMAND p_792 p_242 p_3)
 target_link_libraries(leetcode_test PRIVATE Threads::Threads leetcode)
 
