@@ -40,7 +40,8 @@ add_executable(leetcode_test main.cpp
     tst_p_792.cpp
     tst_p_242.cpp
     tst_p_3.cpp
+    tst_p_1.cpp
     ${GTestFiles})
-add_test(NAME leetcode_test COMMAND p_792 p_242 p_3)
+add_test(NAME leetcode_test COMMAND p_792 p_242 p_3 p_1)
 target_link_libraries(leetcode_test PRIVATE Threads::Threads leetcode)
 
