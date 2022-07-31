@@ -2,6 +2,7 @@
 
 ### Easy
 - [x] 242. Valid Anagram
+- [x] 1. Two Sum
 
 ### Medium
 - [x] 792. Number of Matching Subsequences
