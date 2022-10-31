@@ -9,3 +9,4 @@
 - [x] 792. Number of Matching Subsequences
 - [x] 3. Longest Substring Without Repeating Characters
 - [x] 307. Range Sum Query - Mutable
+- [x] 2. Add Two Numbers

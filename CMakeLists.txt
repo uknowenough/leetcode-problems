@@ -7,7 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
-add_library(leetcode src/main.cpp
+add_library(leetcode
+    include/listnode.h
+    include/solution_2.h    src/solution_2.cpp
     include/solution_766.h  src/solution_766.cpp
     include/solution_792.h  src/solution_792.cpp
     include/solution_242.h  src/solution_242.cpp

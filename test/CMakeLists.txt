@@ -40,6 +40,7 @@ add_executable(leetcode_test main.cpp
     tst_p_766.cpp
     tst_p_792.cpp
     tst_p_242.cpp
+    tst_p_2.cpp
     tst_p_3.cpp
     tst_p_1.cpp
     tst_p_307.cpp
