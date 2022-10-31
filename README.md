@@ -3,6 +3,7 @@
 ### Easy
 - [x] 242. Valid Anagram
 - [x] 1. Two Sum
+- [x] 766. Toeplitz Matrix
 
 ### Medium
 - [x] 792. Number of Matching Subsequences
