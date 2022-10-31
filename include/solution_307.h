@@ -24,7 +24,7 @@ namespace leetcode {
 
 class NumArray {
  public:
-  NumArray(vector<int>& nums);
+  explicit NumArray(vector<int>& nums);
 
   void update(int index, int val);
   int sumRange(int left, int right);

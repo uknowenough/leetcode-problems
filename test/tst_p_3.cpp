@@ -30,7 +30,7 @@ TEST(leetcode, 3_example3)
   std::string s("pwwkew");
 
   Solution3 sln;
-//  EXPECT_EQ(sln.lengthOfLongestSubstring(s), 3);
+  EXPECT_EQ(sln.lengthOfLongestSubstring(s), 3);
 }
 
 TEST(leetcode, 3_example4)

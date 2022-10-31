@@ -17,6 +17,10 @@ struct ListNode
   ListNode() : val(0), next(nullptr) {}
   explicit ListNode(int x) : val(x), next(nullptr) {}
   ListNode(int x, ListNode<T>* next) : val(x), next(next) {}
+  ~ListNode() {
+    if (next)
+      delete next;
+  }
 
   static bool isEqual(const ListNode<T>* l1, const ListNode<T>* l2) {
     auto l1_ref = l1;
