@@ -6,35 +6,19 @@ enable_testing()
 
 find_package(Threads REQUIRED)
 
-if ($ENV{GOOGLETEST_DIR})
-    set(GOOGLETEST_DIR $ENV{GOOGLETEST_DIR})
-else ()
-    if (NOT "/usr/src/googletest" STREQUAL "")
-        message(WARNING "Using googletest src dir specified at Qt Creator wizard")
-    endif ()
-    set(GOOGLETEST_DIR "/usr/src")
-endif ()
-if (EXISTS ${GOOGLETEST_DIR})
-    set(GTestSrc ${GOOGLETEST_DIR}/googletest)
-    set(GMockSrc ${GOOGLETEST_DIR}/gmock)
-elseif (UNIX AND EXISTS /usr/src/gtest)
-    set(GTestSrc /usr/src/gtest)
-    message(WARNING "Using gtest from system")
-    if (EXISTS /usr/src/gmock)
-        set(GMockSrc /usr/src/gmock)
-    endif ()
-else ()
-    message( FATAL_ERROR "No googletest src dir found - set GOOGLETEST_DIR to enable!")
-endif ()
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+add_library(GTest::GTest INTERFACE IMPORTED)
+add_library(GMock::GMock INTERFACE IMPORTED)
 
-set(GTestFiles ${GTestSrc}/src/gtest-all.cc)
-set(GTestIncludes ${GTestSrc} ${GTestSrc}/include)
-if (NOT ${GMockSrc} STREQUAL "")
-    list(APPEND GTestFiles ${GMockSrc}/src/gmock-all.cc)
-    list(APPEND GTestIncludes ${GMockSrc} ${GMockSrc}/include)
-endif ()
-
-include_directories(${GTestIncludes} ../include)
+target_link_libraries(GTest::GTest INTERFACE gtest_main)
+target_link_libraries(GMock::GMock INTERFACE gmock_main)
 
 add_executable(leetcode_test main.cpp
     tst_p_1706.cpp
@@ -45,7 +29,7 @@ add_executable(leetcode_test main.cpp
     tst_p_3.cpp
     tst_p_1.cpp
     tst_p_307.cpp
-    ${GTestFiles})
-add_test(NAME leetcode_test COMMAND p_792 p_242 p_3 p_1)
-target_link_libraries(leetcode_test PRIVATE Threads::Threads leetcode)
+    tst_p_946.cpp)
 
+add_test(NAME leetcode_test COMMAND p_792 p_242 p_3 p_1)
+target_link_libraries(leetcode_test PRIVATE GTest::GTest GMock::GMock Threads::Threads leetcode)
