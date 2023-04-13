@@ -11,3 +11,4 @@
 - [x] 307. Range Sum Query - Mutable
 - [x] 2. Add Two Numbers
 - [x] 1706. Where Will the Ball Fall
+- [x] 946. Validate Stack Sequences
