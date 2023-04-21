@@ -18,6 +18,7 @@ add_library(leetcode
     include/solution_1.h    src/solution_1.cpp
     include/solution_307.h  src/solution_307.cpp
     include/solution_946.h  src/solution_946.cpp
+    include/solution_13.h   src/solution_13.cpp
 )
 
 add_subdirectory(test)
