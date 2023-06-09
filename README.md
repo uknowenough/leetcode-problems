@@ -5,6 +5,7 @@
 - [x] 1. Two Sum
 - [x] 766. Toeplitz Matrix
 - [x] 13. Roman to Integer
+- [x] 744. Find Smallest Letter Greater Than Target
 
 ### Medium
 - [x] 792. Number of Matching Subsequences
