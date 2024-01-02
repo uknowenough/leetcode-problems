@@ -19,3 +19,4 @@
 - [x] 2. Add Two Numbers
 - [x] 1706. Where Will the Ball Fall
 - [x] 946. Validate Stack Sequences
+- [x] 2610. Convert an Array Into a 2D Array With Conditions 
