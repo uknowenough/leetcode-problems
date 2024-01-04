@@ -23,3 +23,4 @@
 - [x] 946. Validate Stack Sequences
 - [x] 2610. Convert an Array Into a 2D Array With Conditions
 - [x] 2125. Number of Laser Beams in a Bank
+- [x] 2870. Minimum Number of Operations to Make Array Empty
