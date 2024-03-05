@@ -12,6 +12,7 @@
 - [x] 13. Roman to Integer
 - [x] 744. Find Smallest Letter Greater Than Target
 - [x] 455. Assign Cookies
+- [x] 217. Contains Duplicate
 
 ### Medium
 
