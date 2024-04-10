@@ -4,7 +4,7 @@
 #include <memory>
 #include <vector>
 
-#include "listnode.h"
+#include "utils/listnode.h"
 #include "solution_2.h"
 
 using namespace testing;

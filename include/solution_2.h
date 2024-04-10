@@ -1,7 +1,7 @@
 #ifndef SOLUTION2_H
 #define SOLUTION2_H
 
-#include "listnode.h"
+#include "utils/listnode.h"
 
 namespace leetcode {
 
