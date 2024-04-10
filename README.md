@@ -1,6 +1,6 @@
 # Leetcode
 
-[![CMake](https://github.com/palmanov/scpi-wrapper/actions/workflows/cmake.yml/badge.svg)](https://github.com/palmanov/scpi-wrapper/actions/workflows/cmake.yml)
+[![CMake](https://github.com/palmanov/leetcode-problems/actions/workflows/cmake.yml/badge.svg)](https://github.com/palmanov/leetcode-problems/actions/workflows/cmake.yml)
 
 ## Problems
 
