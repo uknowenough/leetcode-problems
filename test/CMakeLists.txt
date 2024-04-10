@@ -35,7 +35,8 @@ add_executable(leetcode_test main.cpp
     tst_p_2610.cpp
     tst_p_2125.cpp
     tst_p_2870.cpp
-    tst_p_217.cpp)
+    tst_p_217.cpp
+    tst_p_238.cpp)
 
 add_test(NAME leetcode_test COMMAND p_792 p_242 p_3 p_1)
 target_link_libraries(leetcode_test PRIVATE GTest::GTest GMock::GMock Threads::Threads leetcode)
